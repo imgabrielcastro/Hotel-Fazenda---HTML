@@ -1,0 +1,116 @@
+<html>
+<style>
+    * {
+        font-family: 'Montserrat', sans-serif;
+    }
+</style>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Racionais MC's</title>
+</head>
+
+<body style="
+background: black;
+">
+
+<div class="background" style="display: block;">
+    <header class="menu-principal">
+        <div id="cabecalho">
+            <a href="home.html"> <img src="../img/logo.png" style="width:180px; height:120 px"> </a>
+        </div>
+    </header>
+</div>
+
+<div id="menu">
+    <a href="ambientes.html">AMBIENTES</a>
+    <a href="reservas.html">RESERVAS</a>
+    <a href="contatos.html">CONTATO</a>
+    <a href="atividades.html">ATIVIDADES</a>
+</div><br>
+<div id ="formulario">
+    <form name="formulario"   method="post" action="reservas.php" >
+    <br><br>
+    <b>Dados do cliente: </b>
+    <br><br>
+    
+    Nome:
+    <input type="text" name="nome" id="nome" size=30>
+
+    
+    Endereço:
+    <input type="text" name="endereco" id="endereco" size=30>
+    <br><br>
+    Bairro:
+    <input type="text" name="bairro" id="bairro" size=30>
+    
+    Cidade:
+    <input type="text" name="nome" id="nome" size=30>
+    <br><br>
+    
+    Estado:
+    <select class="estado" id="estado" name="estado">
+        <option value="AC">Acre</option>
+        <option value="AL">Alagoas</option>
+        <option value="AP">Amapá</option>
+        <option value="AM">Amazonas</option>
+        <option value="BA">Bahia</option>
+        <option value="CE">Ceará</option>
+        <option value="DF">Distrito Federal</option>
+        <option value="ES">Espírito Santo</option>
+        <option value="GO">Goiás</option>
+        <option value="MA">Maranhão</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="PA">Pará</option>
+        <option value="PB">Paraíba</option>
+        <option value="PR">Paraná</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PI">Piauí</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="RO">Rondônia</option>
+        <option value="RR">Roraima</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="SP">São Paulo</option>
+        <option value="SE">Sergipe</option>
+        <option value="TO">Tocantins</option>
+        <option value="EX">Estrangeiro</option>
+    </select>
+    
+    Email:
+    <input type="text" name="email" id="email" size=30>
+     <br><br>
+    Telefone: <input type="text" name="telefone" id="telefone" size=30>
+    
+    Celular: <input type="text" name="celular" id="celular" size=30>
+    <br><br><br>
+    <b>Dados do Cadastro:</b> <br>
+    <br>
+    Quais atividades ira fazer?:
+    <select name="matricula" id="matricula">
+    <option value="">Escolha a modalidade : </option>
+    <option value="AC">Andar a cavalo </option>
+    <option value="P">Pescar </option>
+    <option value="A">Ambos </option>
+    <option value="N">Nenhum </option>
+    </select>
+    <br>
+    Qual o horário para o serviço de quarto?:
+    <input type="time" name="hora" id="hora">
+    <br>
+    Você gostaria de comer no hotel?:
+    <input type="radio" name="pessoas" id="pessoas" value="50" > Janta
+    <input type="radio" name="pessoas" id="pessoas" value="50" > Almoço
+    <input type="radio" name="pessoas" id="pessoas" value="50" > Almoço e Janta
+    <input type="radio" name="pessoas" id="pessoas" value="50" > Nenhum
+    <br><br>
+    <input type="submit" name="reserva" id="reserva" value="RESERVAR">
+    <input type="reset"  name="resetar"  id="resetar"  value="Resetar"
+    
+
